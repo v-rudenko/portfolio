@@ -532,10 +532,10 @@ ul.email li i {
 /** about **/
 
 .about {
-  background: url(../images/about_bg.jpg);
+  background: url(../images/about_bg1.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  /* height: 100vh; */
   padding: 90px 0;
 }
 
@@ -1016,4 +1016,7 @@ ul.social_icon li a:hover {
 
 #about-company-heading-container {
   padding-top: 30px;
+  background-color: #393939;
+  overflow: visible;
 }
+
