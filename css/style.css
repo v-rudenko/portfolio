@@ -537,6 +537,7 @@ ul.email li i {
   background-repeat: no-repeat;
   /* height: 100vh; */
   padding: 90px 0;
+  background-size: cover;
 }
 
 .about .titlepage::before {
@@ -1015,8 +1016,8 @@ ul.social_icon li a:hover {
 /* About company section */
 
 #about-company-heading-container {
-  padding-top: 30px;
-  background-color: #393939;
+  padding: 30px 50px 30px;
+  background-color: #393939e3;
   overflow: visible;
 }
 
