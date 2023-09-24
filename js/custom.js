@@ -121,3 +121,27 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
+
+
+
+/////////////////////// My custom js //////////////////////////////////
+
+/////////////////////// My custom js //////////////////////////////////
+
+/////////////////////// My custom js //////////////////////////////////
+
+
+$(document).ready(function() {
+  // Обробка кліку на посиланнях навігаційного меню
+  $('.nav-link').on('click', function(event) {
+    event.preventDefault();
+    
+    // Отримуємо href атрибут посилання та визначаємо ID секції, до якої потрібно прокрутити
+    const target = $(this).attr('href');
+    
+    // Виконуємо плавну анімацію прокрутки до цільової секції
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 800); // 800 - тривалість анімації у мілісекундах
+  });
+});
