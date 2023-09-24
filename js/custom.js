@@ -133,7 +133,7 @@ function closeNav() {
 
 $(document).ready(function() {
   // Обробка кліку на посиланнях навігаційного меню
-  $('.nav-link').on('click', function(event) {
+  $('.nav-link, .read_more').on('click', function(event) {
     event.preventDefault();
     
     // Отримуємо href атрибут посилання та визначаємо ID секції, до якої потрібно прокрутити
