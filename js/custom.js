@@ -137,7 +137,7 @@ $(document).ready(function() {
     event.preventDefault();
     
     // Отримуємо href атрибут посилання та визначаємо ID секції, до якої потрібно прокрутити
-    const target = $(this).attr('href');
+    const target = $(this).attr('data-target');
     
     // Виконуємо плавну анімацію прокрутки до цільової секції
     $('html, body').animate({
