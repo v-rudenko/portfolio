@@ -110,6 +110,23 @@ $(function () {
       interval: false,
     });
   });
+
+  $("#request").submit(function (e) {
+    e.preventDefault();
+    const name = e.target["name"].value;
+    const phone = e.target["phone"].value;
+    const email = e.target["email"].value;
+    const message = e.target["message"].value;
+
+    emailjs.send("service_vwrhup8", "template_9321rdg", {
+      name: name,
+      phone: phone,
+      email: email,
+      message: message,
+    });
+    
+
+  });
 });
 
 /* Toggle sidebar
@@ -122,26 +139,26 @@ function closeNav() {
   document.getElementById("mySidepanel").style.width = "0";
 }
 
-
-
 /////////////////////// My custom js //////////////////////////////////
 
 /////////////////////// My custom js //////////////////////////////////
 
 /////////////////////// My custom js //////////////////////////////////
 
-
-$(document).ready(function() {
+$(document).ready(function () {
   // Обробка кліку на посиланнях навігаційного меню
-  $('.nav-link, .read_more').on('click', function(event) {
+  $(".nav-link, .read_more").on("click", function (event) {
     event.preventDefault();
-    
+
     // Отримуємо href атрибут посилання та визначаємо ID секції, до якої потрібно прокрутити
-    const target = $(this).attr('data-target');
-    
+    const target = $(this).attr("data-target");
+
     // Виконуємо плавну анімацію прокрутки до цільової секції
-    $('html, body').animate({
-      scrollTop: $(target).offset().top
-    }, 800); // 800 - тривалість анімації у мілісекундах
+    $("html, body").animate(
+      {
+        scrollTop: $(target).offset().top,
+      },
+      800
+    ); // 800 - тривалість анімації у мілісекундах
   });
 });
