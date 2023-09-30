@@ -125,6 +125,7 @@ $(function () {
       message: message,
     });
     
+    e.target.innerHTML = `<div class="alert alert-success" role="alert">` + `<h3>Your message has been successfully sent. <br/> We will contact you soon!</h3>. ` + `</div>`;
 
   });
 });
