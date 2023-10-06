@@ -162,4 +162,8 @@ $(document).ready(function () {
       800
     ); // 800 - тривалість анімації у мілісекундах
   });
+
+  $(".triacom").on("click", function (event) {
+    window.open("https://www.triangulum.ua/");
+  });
 });
